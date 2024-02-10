@@ -1,0 +1,44 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Roboto';
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 146, 209);
+    width: 95%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.footer a {
+    color: rgb(0, 146, 209);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-start;
+    grid-column: 1;
+    gap: 50px;
+}
+
+.socialIcons svg {
+    width: 24px;
+    height: auto;
+}
+
+.center {
+    grid-column: 2;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    grid-column: 3;
+}
