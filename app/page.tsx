@@ -1,9 +1,8 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import acmLogo from '@/public/img/acm-logo.png';
-import kirby from '@/public/img/kirby.png'
-
-
+import kirby from '@/public/img/kirby.png';
+import Footer from './components/footer/index';
 
 const Home: NextPage = () => {
 
@@ -37,6 +36,7 @@ const Home: NextPage = () => {
                 <div className='arrow right-arrow'>&#9654;</div>
             </div>
             <Image src={acmLogo} alt='ACM Logo' width={500} height={500} />
+            <Footer />
         </div>
     );
 }
