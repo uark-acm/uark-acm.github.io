@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 <p>&copy; {new Date().getFullYear()} ACM UARK RSO</p>
             </div>
             <div className={styles.center}>
-                <p>The content of this site is soley that of ACM, a registered student organization at the University of Arkansas, and does not in any way reflect the views of the University of Arkansas.</p>
+                <p>The content of this site is solely that of ACM, a registered student organization at the University of Arkansas, and does not in any way reflect the views of the University of Arkansas.</p>
             </div>
             <div className={styles.right}>
                 <a href="">Back To Top</a>

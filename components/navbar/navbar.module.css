@@ -1,0 +1,95 @@
+/* components/footer/navbar.module.css */
+
+.navbar{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 120px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+
+.navbarContentContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 146, 209);
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.acmText{
+    font-weight: bold;
+}
+
+.acmLogo {
+    width: 120px;
+    height: auto;
+    position:relative;
+    left: 60px;
+}
+
+
+.acmTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.leftContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 50px;
+}
+
+.studentChapter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.uaLogo {
+    width: 25%;
+    height: auto;
+}
+
+.footer a {
+    color: rgb(0, 146, 209);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align children to the start */
+    gap: 5px;
+}
+
+.center {
+    grid-column: 2;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    grid-column: 3;
+}
+
+.searchInput {
+    border: 1px solid black; /* Gray border */
+    background-color: #fff; /* Adjust background color */
+    border-radius: 20px; /* Adjust the border radius as needed */
+    padding: 10px;
+    color: black;
+    width: 300px;
+}
