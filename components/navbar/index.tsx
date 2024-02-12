@@ -1,11 +1,18 @@
 // components/footer/index.tsx
+/**
+ * components/footer/index.tsx
+ *
+ * Author: Sankalp Pandey
+ * Date: 02/11/2024
+ *
+ */
 
 import React from 'react';
 import styles from './navbar.module.css';
 import NextLink from 'next/link';
 
 const Navbar: React.FC = () => {
-    const quote = "Yap yap yap yap";
+    const quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
     const quoteAuthor = "ACM Web Dev Team"
 
     return (
