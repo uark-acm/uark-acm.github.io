@@ -3,7 +3,7 @@
  * components/footer/index.tsx
  *
  * Author: Sankalp Pandey
- * Date: 02/11/2024
+ * Date: 02/12/2024
  *
  */
 
