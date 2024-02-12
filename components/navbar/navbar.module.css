@@ -69,7 +69,7 @@
 .left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align children to the start */
+    align-items: flex-start;
     gap: 5px;
 }
 
@@ -86,9 +86,9 @@
 }
 
 .searchInput {
-    border: 1px solid black; /* Gray border */
-    background-color: #fff; /* Adjust background color */
-    border-radius: 20px; /* Adjust the border radius as needed */
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 20px;
     padding: 10px;
     color: black;
     width: 300px;
