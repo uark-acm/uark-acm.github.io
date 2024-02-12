@@ -4,10 +4,12 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     height: 120px;
     margin-right: 80px;
     margin-left: 20px;
+    margin-bottom: 70px;
 }
 
 .navbarContentContainer {
@@ -55,22 +57,19 @@
     gap: 10px;
 }
 
-.uaLogo {
-    width: 25%;
-    height: auto;
+.studentChapterText{
+    margin-top: 3px;
 }
 
-.footer a {
-    color: rgb(0, 146, 209);
-    text-decoration: none;
-    transition: color 0.3s ease;
+.uaLogo {
+    width: 35%;
+    height: auto;
 }
 
 .left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
 }
 
 .center {
@@ -85,11 +84,35 @@
     grid-column: 3;
 }
 
+.quote {
+
+}
+
+.quoteAuthor {
+    text-align: right;
+}
+
+.searchContainer {
+    position: relative;
+    display: inline-block;
+}
+
 .searchInput {
     border: 1px solid black;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 30px 10px 10px; /* Adjust the right padding to make room for the icon */
     color: black;
-    width: 300px;
+    width: 260px;
 }
+
+.searchLogo {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+

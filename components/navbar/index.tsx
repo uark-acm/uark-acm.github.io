@@ -9,7 +9,6 @@
 
 import React from 'react';
 import styles from './navbar.module.css';
-import NextLink from 'next/link';
 
 const Navbar: React.FC = () => {
     const quote = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
@@ -36,7 +35,10 @@ const Navbar: React.FC = () => {
                     <p className={styles.quoteAuthor}>- {quoteAuthor}</p>
                 </div>
                 <div className={styles.right}>
-                    <input type="text" placeholder="Search..." className={styles.searchInput}/>
+                    <div className={styles.searchContainer}>
+                        <img className={styles.searchLogo} src="/img/search-logo.png" alt="Search"/>
+                        <input type="text" placeholder="Search.." className={styles.searchInput}/>
+                    </div>
                 </div>
             </div>
         </nav>
