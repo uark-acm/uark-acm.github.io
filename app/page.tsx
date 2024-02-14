@@ -6,6 +6,7 @@
  */
 
 import { NextPage } from 'next';
+import Navbar from '@/components/navbar';
 import Image from 'next/image';
 import Footer from '@/components/footer';
 import acmLogo from '@/public/img/acm-logo.png';
@@ -21,6 +22,9 @@ const Home: NextPage = () => {
     return (
         <div className={'flex items-center flex-col m-5'}>
             <h1 className={'text-4xl mb-[100px]'}>The UARK ACM website is under development :)!</h1>
+            <div className ={'navbar'}>
+                <Navbar/>
+            </div>
             <div className={'carousel'}>
                 {/* carousel description */}
                 <div className={'carousel-description'}>
