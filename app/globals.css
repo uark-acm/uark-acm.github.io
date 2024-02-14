@@ -90,3 +90,30 @@ body {
     right: 0;
     color: #0092d1;
 }
+
+/* Begin CSS for Hero Section */
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+    }
+}
+
+.hero-section {
+    background-color: rgb(121, 186, 224);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    padding: 0 10vw;
+}
+
+.hero-text {
+    font-family: 'Roboto', sans-serif; 
+    padding-right: 50px;
+    color: white;
+    padding: 0 5vw;
+}
+
+.hero-text p {
+    width: 50vw;
+}
