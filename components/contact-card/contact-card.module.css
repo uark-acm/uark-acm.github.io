@@ -1,0 +1,34 @@
+.contactCard {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px; /* Reduced padding */
+  margin: 15px; /* Reduced margin */
+  background-color: rgb(204, 204, 204);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em; /* Increased font size */
+}
+
+.profilePicture {
+  width: 120px; /* Increased width */
+  height: 120px; /* Increased height */
+  margin-right: 15px; /* Increased margin-right */
+}
+
+.details {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.details h2 {
+  margin-bottom: 10px; /* Increased space between title and other details */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em; /* Increased font size */
+}
+
+.details p {
+  margin-bottom: 5px; /* Increased space between each detail */
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em; /* Increased font size */
+}
