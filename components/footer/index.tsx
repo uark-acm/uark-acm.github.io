@@ -2,8 +2,10 @@
  * components/footer/index.tsx
  * 
  * Author: Aidan McQueen, Jamari Beneloga, Josh Johnson
- * Date: 02/08/2024
+ * Date: 02/14/2024
  */
+
+'use client';
 
 import React from 'react';
 import styles from './footer.module.css';

@@ -1,3 +1,10 @@
+/**
+ * app/layout.tsx
+ * 
+ * Author: Alex Prosser
+ * Date: 02/14/2024
+ */
+
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google'
 import './globals.css';

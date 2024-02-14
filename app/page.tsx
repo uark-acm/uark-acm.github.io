@@ -1,15 +1,19 @@
 /**
- * components/footer/index.tsx
+ * app/page.tsx
  * 
- * Author: Alex Prosser, Jordi Castro
- * Date: 02/08/2024
+ * Author: Alex Prosser, Jordi Castro, Amadeo Costaldi
+ * Date: 02/14/2024
  */
+
+'use client';
 
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Footer from '@/components/footer';
 import acmLogo from '@/public/img/acm-logo.png';
 import kirby from '@/public/img/kirby.png';
+import ContactCard from '@/components/contact-card';
+import profilePicture from '@/public/img/default-profile-picture-2.jpg';
 
 const Home: NextPage = () => {
 
@@ -43,6 +47,7 @@ const Home: NextPage = () => {
                 <div className={'arrow right-arrow'}>&#9654;</div>
             </div>
             <Image src={acmLogo} alt={'ACM Logo'} width={500} height={500} />
+            <ContactCard profilePicture={profilePicture} name={'Alex Prosser'} role={'President'} email={'alprosse@uark.edu'}/>
             <Footer />
         </div>
     );
