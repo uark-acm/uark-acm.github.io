@@ -1,0 +1,100 @@
+/* carousel element rules */
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 500px; 
+    max-height: 500px; 
+    background-color: #cccccc; 
+    color: #ffffff; /* text is this color */
+    display: flex;
+}
+.carousel_description {
+    flex: 1;
+    padding: 40px;
+}
+.article_title {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+.author {
+    font-size: 18px; 
+    font-style: italic; 
+    margin-bottom: 10px; 
+}
+
+.article_description {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+.carousel_image {
+    width: 100%;
+    height: 100%;
+    border: 50px solid #cccccc; /* image border*/
+
+    
+}
+
+.carousel_pagination {
+    position: absolute;
+    bottom: 10px; /* bottom distance*/
+    left: 50%; /* horizontally centered left*/
+    transform: translateX(-50%);  /* horizontally centered right */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination_circle {
+    width: 10px; /* distance between circles*/
+    height: 10px;
+    border-radius: 50%;
+    color: #0092d1;
+    margin: 0 5px; /* margin between circles*/
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*center left and right*/ 
+    width: 25px;
+    height: 25px;
+    background-color: #3f3d3d; /* ? */
+    cursor: pointer;/*clickable*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*center left and right*/ 
+    width: 25px;
+    height: 25px;
+    background-color: #3f3d3d; /* ? */
+    cursor: pointer;/*clickable*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    color: #0092d1;
+
+
+
+}
+.right_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*center left and right*/ 
+    width: 25px;
+    height: 25px;
+    background-color: #3f3d3d; /* ? */
+    cursor: pointer;/*clickable*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    color: #0092d1;
+}
