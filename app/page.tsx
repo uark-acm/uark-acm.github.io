@@ -15,6 +15,7 @@ import acmLogo from '@/public/img/acm-logo.png';
 import ContactCard from '@/components/contact-card';
 import profilePicture from '@/public/img/default-profile-picture-2.jpg';
 import Carousel from '@/components/image-carousel';
+import kirby from '@/public/img/kirby.png';
 
 const Home: NextPage = () => {
 
@@ -30,7 +31,22 @@ const Home: NextPage = () => {
                 <Navbar/>
             </div>
             <div className={'carousel'}>
-                <Carousel images={[]} style={''} format={''}/>
+                <Carousel images={
+                        [kirby, acmLogo]
+                    } 
+                    style={ {
+                            width:10, height:10, backgroundColor:'#cccccc', 
+                            textColor:'#ffffff', 
+                            imageWidth:10, 
+                            imageHeight:10,
+                        } 
+                    } 
+                    format={ {
+                            orientation:{verticalStart:0, verticalEnd:10, horizontalStart:0, horizontalEnd:10}, 
+                            startingImage:'startingImage', 
+                            speed:-1,
+                        } 
+                    }/>
         
             </div>
             

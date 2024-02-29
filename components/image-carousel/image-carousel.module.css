@@ -8,11 +8,11 @@
     color: #ffffff; /* text is this color */
     display: flex;
 }
-.carousel_description {
+.carouselDescription {
     flex: 1;
     padding: 40px;
 }
-.article_title {
+.articleTitle {
     font-size: 24px; 
     font-weight: bold; 
     margin-bottom: 10px; 
@@ -24,11 +24,11 @@
     margin-bottom: 10px; 
 }
 
-.article_description {
+.articleDescription {
     font-size: 16px; 
     line-height: 1.5; 
 }
-.carousel_image {
+.carouselImage {
     width: 100%;
     height: 100%;
     border: 50px solid #cccccc; /* image border*/
@@ -36,7 +36,7 @@
     
 }
 
-.carousel_pagination {
+.carouselPagination {
     position: absolute;
     bottom: 10px; /* bottom distance*/
     left: 50%; /* horizontally centered left*/
@@ -46,7 +46,7 @@
     align-items: center;
 }
 
-.pagination_circle {
+.paginationCircle {
     width: 10px; /* distance between circles*/
     height: 10px;
     border-radius: 50%;
@@ -67,7 +67,7 @@
     align-items: center;
 }
 
-.left_arrow {
+.leftArrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /*center left and right*/ 
@@ -84,7 +84,7 @@
 
 
 }
-.right_arrow {
+.rightArrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /*center left and right*/ 
