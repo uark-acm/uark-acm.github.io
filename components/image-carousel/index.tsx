@@ -7,11 +7,9 @@
 
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './image-carousel.module.css';
 import Image, { StaticImageData } from 'next/image';
-import kirby from '@/public/img/kirby.png';
-import acmLogo from '@/public/img/acm-logo.png';
 
 interface CarouselProps {
     images: StaticImageData[]
@@ -37,9 +35,25 @@ interface CarouselProps {
 
 }
 
+// <div className='carousel' style=style format=format>
+
 const Carousel: React.FC<CarouselProps> = ({images, style, format}) => {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const onAcknowledgeClick = (arrow: string) => {
+        console.log(`${arrow} arrow has been clicked!`)
+    
+        if (arrow === 'left' && currentIndex > 0) {
+            setCurrentIndex(currentIndex - 1)
+            console.log(`currentIndex:${currentIndex}`)
+        }
+        if (arrow === 'right' && currentIndex < 5) {
+            setCurrentIndex(currentIndex + 1)
+            console.log(`currentIndex:${currentIndex}`)
+        }
+    }
+
     return (
-        <div className={styles.carousel}>
             <div className={styles.carousel}>
             {/* carousel description */}
             <div className={styles.carouselDescription}>
@@ -47,9 +61,8 @@ const Carousel: React.FC<CarouselProps> = ({images, style, format}) => {
                 <h3 className={styles.author}>by Author</h3>
                 <p className={styles.article_description}>Article description that will be cut off to save space...</p>
             </div>
-            {/* temp image*/}
             <div className={styles.carouselImage}>
-                <Image src={images[0]} alt={'Temp Image'} width={500} height={100}></Image>
+                <Image src={images[currentIndex]} alt={'Temp Image'} width={500} height={100}></Image>
             </div>
             <div className={styles.carouselPagination}>
                 <span className={styles.paginationCircle}>&#x25CF;</span>
@@ -57,11 +70,10 @@ const Carousel: React.FC<CarouselProps> = ({images, style, format}) => {
                 <span className={styles.paginationCircle}>&#x25CF;</span>
             </div>
             {/* left arrow*/}
-            <div className={styles.leftArrow}>&#9664;</div>
+            <div className={styles.leftArrow} onClick={() => onAcknowledgeClick('left')}>&#9664;</div>
             {/* right arrow*/}
-            <div className={styles.rightArrow}>&#9654;</div>
+            <div className={styles.rightArrow} onClick={() => onAcknowledgeClick('right')}>&#9654;</div>
             </div>
-        </div>
     );
 };
 

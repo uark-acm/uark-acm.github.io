@@ -18,11 +18,6 @@ import Carousel from '@/components/image-carousel';
 import kirby from '@/public/img/kirby.png';
 
 const Home: NextPage = () => {
-
-    // left and right arrow components: onClick={() => onAcknowledgeClick('Left')}
-    // const onAcknowledgeClick = (arrow : string) => {
-    //     console.log('${arrow} arrow has been clicked');
-    // };
     
     return (
         <div className={'flex items-center flex-col m-5'}>
